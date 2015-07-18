@@ -1,3 +1,19 @@
-<h2 id="title">Welcome to Ember.js</h2>
+Sup this is supposed to be the page where i fetch things
+
+{{model.age}}
+{{model.sex}}
 
 {{outlet}}
+
+<div>This is the end</div>
+
+<form {{action 'registerUser' on='submit'}}>
+  <label for="age">age</label>
+  {{input value=age placeholder='Enter age'}}  
+  <label for="name">name</label>
+  {{input value=name placeholder='Enter name'}}  
+  <label for="sex">sex</label>
+  {{input value=sex placeholder='Enter sex'}}
+
+  <button type="submit">store this</button>
+</form>
